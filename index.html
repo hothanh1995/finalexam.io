@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div {
+        padding: 10px 20px;
+        margin: 10px;
+        border: 1px solid red;
+        width: 100px;
+        box-sizing: border-box;
+      } */
+
+      .display {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .grid50 {
+        grid-column: (3/-3);
+      }
+      /* mobile */
+      @media screen and (max-width: 767px) {
+        div {
+          background-color: #fff;
+        }
+      }
+      /* tablet */
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        div {
+          background-color: orange;
+        }
+      }
+      /* Desktop */
+      @media screen and (min-width: 1200px) {
+        div {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Title</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor veritatis
+      deserunt minus odio in consequuntur rerum, voluptatibus delectus excepturi
+      nesciunt eligendi neque ea repudiandae unde veniam quae explicabo ut.
+      Alias.
+    </p>
+    <div>jjj</div>
+
+    <div class="display">
+      <div>hjj</div>
+      <div>hjj</div>
+      <div>hjj</div>
+      <div>hjj</div>
+      <div class="grid50">hjj</div>
+      <div class="grid50">hjj</div>
+    </div>
+  </body>
+</html>
